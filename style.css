@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#back{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#back video{
+    width: 100%;
+}
+#back #overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.397);
+}
+#overlay #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    color: white;
+}
+#links{
+    display: flex;
+}
+#nav .ahover a{
+    text-decoration: none;
+    margin-right: 40px;
+    color: white;
+    font-size: 13px;
+}
+#nav #brand #h1line{
+    width: 0%;
+    height: 3px;
+    border-radius: 100px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    
+}
+#links .ahover #home
+{
+    font-weight: 700;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+    height: 53%;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: white;
+    align-items: center;
+}
+#main h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+    
+}
+
+#main h6{
+    margin-left: -60px;
+}
+#main button{
+    padding:12px 20px;
+    border-radius: 100px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    margin-top: 20px;
+    margin-left: -190px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#links i{
+    display: none;
+}
+#cross{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#cross img{
+    width: 20px;
+    height: 20px;
+}
+#line1{
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    display: flex;
+    
+    flex-direction: column;
+
+    align-items: center;
+}
+#line11{
+    position: absolute;
+    right: 86%;
+    width: 1.5px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+#line22{
+    position: absolute;
+   bottom: 104%;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+}
+#line1 img{
+    margin-top: 40px;
+}
+#line2{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    margin-top: 73%;
+    margin-right: -10%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    
+}
+#line2 img{
+    margin-right: 25px;
+}
+#cross #line2 img:nth-child(1)
+{
+    margin-left: 80px;
+    margin-right: 40px;
+}
+#cross #line2 img:nth-child(3)
+{
+    width: 40px;
+    height: 40px;
+}
+
+
+#main button:hover{
+    background-color: #fff;
+    color: black;
+    border: none;
+    font-size: 16px;
+    font-weight: 800;
+    padding:  14px 28px;
+}
+
+
+#nav #brand:hover #h1line{
+    width: 100%;
+    background-color: #fff;
+}
+
+
+.aline{
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 100px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.ahover:hover .aline{
+    width: 55%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:450px){
+    #cross{
+        display: none;
+    }
+    #back video{
+        height: 100%;
+        width: initial;
+    }
+    #nav #links i{
+        display: initial;
+        color: white;
+        font-size: 20px;
+    }
+    #links .ahover{
+        display: none;
+    }
+    #overlay #nav
+    {
+        padding: 12px 15px;
+    }
+    #nav h1{
+        font-size: 20px;
+        padding: 2px 2px;
+    }
+    #main h1{
+        font-size: 25px;
+    }
+    #main{
+         bottom: 5%;
+         width: 70%;
+    }
+    #main h6{
+        font-size: 8px;
+        margin-left: 0;
+        font-weight: 500;
+    }
+    #main button{
+        margin-right: -50px;
+        padding: 7px 15px;
+    }
+}
